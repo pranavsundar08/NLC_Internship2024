@@ -1,0 +1,237 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="773.6,1412" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.GoogleVision</x:String>
+      <x:String>UiPath.GoogleVision.Contracts</x:String>
+      <x:String>UiPath.GoogleVision.Enums</x:String>
+      <x:String>UiPath.GoogleVision.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.GoogleVision.Models</x:String>
+      <x:String>UiPath.GoogleVision.Telemetry</x:String>
+      <x:String>Google.Apis.Vision.v1</x:String>
+      <x:String>Google.Apis.Services</x:String>
+      <x:String>UiPath.GoogleVision.Activities.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MicrosoftVision.Activities</x:String>
+      <x:String>UiPath.MicrosoftVision</x:String>
+      <x:String>UiPath.MicrosoftVision.Telemetry</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.Vision.Core.OCR</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleVision</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleVision.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Google.Apis.Vision.v1</AssemblyReference>
+      <AssemblyReference>Google.Apis</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftVision.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftVision</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="784,1347.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="AIzaSyAoR4OFsY_2ofyuntsGBMJ7bhJNkEd2TaQ" Name="API_Key" />
+      <Variable x:TypeArguments="x:String" Name="Result" />
+      <Variable x:TypeArguments="s:String[]" Name="Files" />
+      <Variable x:TypeArguments="x:String" Default="C:\Users\prana\OneDrive\Documents\UiPath\Internship_NLC\Images" Name="Filelocation" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Images" sap:VirtualizedContainerService.HintSize="721.6,1258.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ca29f7f2-e7e5-41b3-b092-908ce4c65a0f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,944" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="625.6,84.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[Files]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[directory.GetFiles(Filelocation)]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="625.6,768.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Files]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,629.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[currentText]" sap:VirtualizedContainerService.HintSize="529.6,189.6" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_2" ImageDpi="150" Range="All" Text="[Result]">
+                      <ui:ReadPDFWithOCR.OCREngine>
+                        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                          <ActivityFunc.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                          </ActivityFunc.Argument>
+                          <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="g12psJ0FkrikWHQIWvC/AMDtDF7c3QjLUDnIqGPvyFXC+iJSQ6EDhJo11jUprlK6FAizLSQn0CwXjPyxvIhi+w==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_2" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+                        </ActivityFunc>
+                      </ui:ReadPDFWithOCR.OCREngine>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ReadPDFWithOCR>
+                    <p1:WordApplicationScope DisplayName="Word Application Scope" FilePath="Images/Result.doc" sap:VirtualizedContainerService.HintSize="529.6,351.2" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                      <p1:WordApplicationScope.Body>
+                        <ActivityAction x:TypeArguments="ui:WordDocument">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,218.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <p1:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="433.6,129.6" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[Result]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </p1:WordApplicationScope.Body>
+                    </p1:WordApplicationScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1020" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAW5SURBVFhH7ZfZc1RFGMX5D/RFZWYIEHYIZemLZSmK4oKiuIuoKO4LIov7vu8b7rtiVYAkhC1IEkICPlhlWSA7CYQEkpkJCRFI2IJk6+P5+nZPeiY9VHyIT/mqTvW8JPdX55yvb91+fdM3fdPDaS054xysO2szpdS6/uhcS/HsWBvi7xA6ykJoLwup9rIw2spCTW2loflYftrp5s97f7DuzBr1W38k4LQIphVGe2lYUXKibU1Yta2J8Ixs/t8gu8AMVOAYZeD0GUEr4VoJp1UyAP+UhueZf9G7k4BjjALXoYEIGDhmZMEiOClwqwfwzMDJ1ZE55t/03tA1AQucKmOEOlKJ0YCVROicAGkpgROdKM7g74Fy4kRRBlqKMlRL0UCeg3C8cKA6VjhIhGOFg3F01WBF4civ1MpMnpk4vDJTHS7IRHPBEJFqKhja3LRiyGyD1TUSY2tJmA8L88Fh1VIc5gPDaCmO8GFafFCEDxINoDL4MJ6lZ6uOqteBhl+A+vnAvh+p74G6b4D4l9QXQOwzIPoJ9RH1AVD7LlDzFrD3Teo1YM/L1EtA9fNQlXPR8vvEZoPVNceLQzhQEEL9khD2LQmreF4YdYvDKsYzlhtGPC+iYrkRREU5EcTzh+HIH1PRWfs5Yb4mxMd88PvUewbgHQPxhpGAvBKo+kXqBQ2EqmepZ6ingd1PUk9AVcyEweqao+uno7NxBXBoNVVEFQIHV4LUwN/LqaVAYz6VC+zPobLp2E90SNyhK1GBI1itAasRdyzYqwZOXDJwVc91A8PuuUDlbGDXrO6A7fGfGRNV/wMj+o76Noip7isTFZ2KfUrNo5y4dGTWtbcd1wi214Ixwp6AVc4i3Exg54zugGiQ/rA7AieRaZkOiUsaTsAYZfRDAnnAtGvsowu2xxPnbgeuco4Be5x6jHCPUo94ADWY41idgLmuCRhd02AmTt0zgUuJc6+N04IZ104FtmuGBkPFQ9SDHkDtmMAZx+LGMQumo7RL4IDVeMCsaz2MM3DtYQ2GivuB8vs8gGl7xjh9PdNgjDOxAOnifMrACZhxrVJcEzCRgIlrD2gwlN9LTfcBenqWBOZup/TMXhtpwJJcc8GkZ26cyWDYcTc1zQPo9ixdnLpndgns5SpwBKv29cwXJ8FS4kT5PQHY9mnUHdTtHsBEnKlgvmsjtWfimoBJnLZnzhLYnlU4cVY4YDvuou4M4LZNpab4AD09Szjmxmm2U8CqfT1zHEsXp4aTOAm23YBtF7DbqFuBrTd7AE/ZM+OaBkvtmTgmcYpj8hbw9Yxxlkuc7NkO0zMnzgBsigbD1puoGz2AFsxeG26ctmfe++w/9swTp3VNwLDlemDzZA9g0gK4YLKdTs+qTM8sGN+bQZy2Z+KYu50C5sS5TRwzcW69JQXsOupaapIPME3Pku4zswD22kh5PSWDOddGUpyuY4xzyw0UwbZMJtg1wKarqas8gElg7kXrxpnaMwOWFKeAiWsSJcF0nLZnBNsmrlmwIM4AbJIGw6YrgY1XeAB1lBbMxOkFs3EKmFkAX8/0droLkBKnuGbiDFybqMGw8TLgrwk+QLMACbCUa0PeAjuta777zHdtSJzpembjFDBx7XJqArDhEgKO9wDqOF0w07PE68mN0+lZ4tqwYOl65sZpwHScAiauXUq48dTFwPpx3QGVbGOP4zQLUO6LU8BMz7Rr4ljyAgRwXXGKYxpswzjCXYDOP8/vDigfKqqCMIm3gLk2EgsgrpkF0Nspm5kap3ufme1M9MyA6Z7RNQ3GODXYRQS70MCdh0Orzu3+0dS0Ytjsg8uGNh9cNgwHtIbzM4TnUjmHo3HJCNWYPwL78+UcyXMkGhaLRmnV541U9XmjqNHYlxuoLme0ilN1OWMQp2KLxqjYoixEF45R0YVZKrpAfo9FbXaWql3AU5Q9trkmO6v3v7P7pm/6pm9k+vX7F5FyeWLX3vnlAAAAAElFTkSuQmCC" InformativeScreenshot="c0af9a8722a7f97ba07efdd6f932e0ab.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Images' /&gt;" Title="Images" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
